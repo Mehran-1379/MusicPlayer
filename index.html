@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+            <img src="" alt="Album Art">
+        </div>
+        <h2 id="title"></h2>
+        <h3 id="artist"></h3>
+        <audio src=""></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration"></span>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+    </div>
+
+    <div id="playLists" class="Box" style="margin-left: 4rem;">
+        <h3 style="margin: 0.5rem 0;">Play Lists</h3>
+        <img id = "addPlayList" style="display:block;height: 2rem;margin-left:auto; margin-right:auto" src="img/icons8-add-new-100.png" alt="">
+
+    </div>
+    <div id="recent" class="Box">
+        <h3 style="margin: 0.5rem 0;">Recent</h3>
+    </div>
+    <div id="Library" class="Box">
+        
+        <h3 style="margin: 0.5rem 0;">Music Library</h3>
+        <div id="">
+            <input type="text" id="search" placeholder="Search">
+            <input type="submit" id="submit" value="Search" style="height: 1.9rem;background-color:rgb(178, 178, 206);border:none;">
+            <div class="hoverElParent" id="searchres"></div>
+
+        </div>
+        
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="behave.js"></script>
+
+</body>
+
+</html>
